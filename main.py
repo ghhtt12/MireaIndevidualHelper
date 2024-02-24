@@ -4,7 +4,6 @@ import config
 
 bot = telebot.TeleBot(config.token)
 
-
 @bot.message_handler(commands=['start'])
 def start(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
