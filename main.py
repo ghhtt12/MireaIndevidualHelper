@@ -3,7 +3,7 @@ from telebot import types  # для указание типов
 import config
 
 bot = telebot.TeleBot(config.token)
-
+#fjv
 @bot.message_handler(commands=['start'])
 def start(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
