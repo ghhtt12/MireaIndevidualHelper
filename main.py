@@ -7,6 +7,7 @@ import threading
 
 bot = telebot.TeleBot(config.token)
 dict1={}
+#rff
 def remnder():
     @bot.message_handler(commands=['reminder'])
     def reminder_message(message):
