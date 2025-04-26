@@ -1,14 +1,27 @@
-from setuptools import setup, find_packages
+"""!
+@file setup.py
+@brief Скрипт для установки пакета
 
+Содержит функции для чтения зависимостей и настройки пакета.
+"""
+
+from setuptools import setup, find_packages
 import json
 import os
 
+
 def read_pipenv_dependencies(fname):
-    """Получаем из Pipfile.lock зависимости по умолчанию."""
+    """!
+    @brief Получает зависимости из файла requirements.txt
+
+    @param fname Имя файла с зависимостями
+    @return Список зависимостей
+    """
     filepath = os.path.join(os.path.dirname(__file__), fname)
     with open(filepath) as lockfile:
         lockjson = json.load(lockfile)
         return [dependency for dependency in lockjson.get('default')]
+
 
 if __name__ == '__main__':
     setup(
@@ -20,6 +33,6 @@ if __name__ == '__main__':
         ]),
         description='A demo package.',
         install_requires=[
-              *read_pipenv_dependencies('requirements.txt'),
+            *read_pipenv_dependencies('requirements.txt'),
         ]
     )

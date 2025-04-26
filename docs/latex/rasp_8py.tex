@@ -1,0 +1,118 @@
+\doxysection{C\+:/\+Users/koval/\+Pycharm\+Projects/\+Mirea\+Indevidual\+Helper/rasp.py File Reference}
+\hypertarget{rasp_8py}{}\label{rasp_8py}\index{C:/Users/koval/PycharmProjects/MireaIndevidualHelper/rasp.py@{C:/Users/koval/PycharmProjects/MireaIndevidualHelper/rasp.py}}
+
+
+Модуль для работы с расписанием и дедлайнами  
+
+
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{rasp_8py_a5ba0a522c8a8e992491377a47a289430}{rasp.\+ter}} ()
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция для тестирования \end{DoxyCompactList}\item 
+\mbox{\hyperlink{rasp_8py_ac216c33275e4fc1d7532135ee22466f8}{rasp.\+ter1}} (n)
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция для тестирования \end{DoxyCompactList}\item 
+\mbox{\hyperlink{rasp_8py_a9d8e837fe0412f0083a71c94c96e76c6}{rasp.\+pr}} (dict2)
+\begin{DoxyCompactList}\small\item\em Форматирует список дедлайнов для вывода \end{DoxyCompactList}\item 
+\mbox{\hyperlink{rasp_8py_a5a8f1049b9e0c43a2fe34f3b6054d562}{rasp.\+pr1}} (key)
+\begin{DoxyCompactList}\small\item\em Возвращает расписание для указанной группы \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{rasp_8py_ae19ec6e6b66fa6724fcf10557f07a7b4}\label{rasp_8py_ae19ec6e6b66fa6724fcf10557f07a7b4} 
+{\bfseries rasp.\+workbook} = openpyxl.\+load\+\_\+workbook("{}res.\+xlsx"{})
+\item 
+\Hypertarget{rasp_8py_abaee02105025d43dc81ceac01f19c1c6}\label{rasp_8py_abaee02105025d43dc81ceac01f19c1c6} 
+{\bfseries rasp.\+sheet} = workbook.\+active
+\item 
+dict \mbox{\hyperlink{rasp_8py_abd4feccfdc430d444e37a3d4ba8ed18f}{rasp.\+dict}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Модуль для работы с расписанием и дедлайнами 
+
+Содержит функции для работы с расписанием групп и дедлайнами. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{rasp_8py_a9d8e837fe0412f0083a71c94c96e76c6}\index{rasp.py@{rasp.py}!pr@{pr}}
+\index{pr@{pr}!rasp.py@{rasp.py}}
+\doxysubsubsection{\texorpdfstring{pr()}{pr()}}
+{\footnotesize\ttfamily \label{rasp_8py_a9d8e837fe0412f0083a71c94c96e76c6} 
+rasp.\+pr (\begin{DoxyParamCaption}\item[{}]{dict2}{}\end{DoxyParamCaption})}
+
+
+
+Форматирует список дедлайнов для вывода 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dict2} & Словарь с дедлайнами \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Отформатированная строка с дедлайнами 
+\end{DoxyReturn}
+\Hypertarget{rasp_8py_a5a8f1049b9e0c43a2fe34f3b6054d562}\index{rasp.py@{rasp.py}!pr1@{pr1}}
+\index{pr1@{pr1}!rasp.py@{rasp.py}}
+\doxysubsubsection{\texorpdfstring{pr1()}{pr1()}}
+{\footnotesize\ttfamily \label{rasp_8py_a5a8f1049b9e0c43a2fe34f3b6054d562} 
+rasp.\+pr1 (\begin{DoxyParamCaption}\item[{}]{key}{}\end{DoxyParamCaption})}
+
+
+
+Возвращает расписание для указанной группы 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & Название группы \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Расписание группы 
+\end{DoxyReturn}
+\Hypertarget{rasp_8py_a5ba0a522c8a8e992491377a47a289430}\index{rasp.py@{rasp.py}!ter@{ter}}
+\index{ter@{ter}!rasp.py@{rasp.py}}
+\doxysubsubsection{\texorpdfstring{ter()}{ter()}}
+{\footnotesize\ttfamily \label{rasp_8py_a5ba0a522c8a8e992491377a47a289430} 
+rasp.\+ter (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Вспомогательная функция для тестирования 
+
+Получает значения ячеек из таблицы Excel. \Hypertarget{rasp_8py_ac216c33275e4fc1d7532135ee22466f8}\index{rasp.py@{rasp.py}!ter1@{ter1}}
+\index{ter1@{ter1}!rasp.py@{rasp.py}}
+\doxysubsubsection{\texorpdfstring{ter1()}{ter1()}}
+{\footnotesize\ttfamily \label{rasp_8py_ac216c33275e4fc1d7532135ee22466f8} 
+rasp.\+ter1 (\begin{DoxyParamCaption}\item[{}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Вспомогательная функция для тестирования 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & Номер колонки для чтения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Список значений из колонки 
+\end{DoxyReturn}
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{rasp_8py_abd4feccfdc430d444e37a3d4ba8ed18f}\index{rasp.py@{rasp.py}!dict@{dict}}
+\index{dict@{dict}!rasp.py@{rasp.py}}
+\doxysubsubsection{\texorpdfstring{dict}{dict}}
+{\footnotesize\ttfamily \label{rasp_8py_abd4feccfdc430d444e37a3d4ba8ed18f} 
+dict rasp.\+dict}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ =\ \ \{\textcolor{stringliteral}{'ИВБО-\/01-\/22'}:\ [}
+\DoxyCodeLine{00002\ \ \ \ \ \textcolor{stringliteral}{'Понедельник:Анализ\ и\ концептуальное\ моделирование\ систем,\ Теория\ вероятностей\ и\ математическая\ статистика,\ Схемотехника\ устройств\ компьютерных\ систем,\ Схемотехника\ устройств\ компьютерных\ систем,\(\backslash\)nВторник:\ Схемотехника\ устройств\ компьютерных\ систем,\ Схемотехника\ устройств\ компьютерных\ систем,\ Разработка\ предметно-\/ориентированных\ языков\ программирования,Программирование\ на\ языке\ Питон,Иностранный\ язык,Иностранный\ язык,\(\backslash\)nСреда:Разработка\ предметно-\/ориентированных\ языков\ программирования,Разработка\ предметно-\/ориентированных\ языков\ программирования,\ Анализ\ и\ концептуальное\ моделирование\ систем,\ Анализ\ и\ концептуальное\ моделирование\ систем,Системное\ программное\ обеспечение,Проектирование\ баз\ данных,\(\backslash\)nЧетверг:Схемотехника\ устройств\ компьютерных\ систем,\ Схемотехника\ устройств\ компьютерных\ систем,\ Разработка\ предметно-\/ориентированных\ языков\ программирования,\ Программирование\ на\ языке\ Питон,\ Иностранный\ язык,\ Иностранный\ язык,\(\backslash\)nПятница:Разработка\ предметно-\/ориентированных\ языков\ программирования,Разработка\ предметно-\/ориентированных\ языков\ программирования,Анализ\ и\ концептуальное\ моделирование\ систем,Анализ\ и\ концептуальное\ моделирование\ систем,\ Системное\ программное\ обеспечение,\ Проектирование\ баз\ данных,\(\backslash\)nСуббота:Проектирование\ баз\ данных,\ Проектирование\ баз\ данных,Физическая\ культура\ и\ спорт\ (элективная\ дисциплина),\ Физическая\ культура\ и\ спорт\ (элективная\ дисциплина),Теория\ вероятностей\ и\ математическая\ статистика,Теория\ вероятностей\ и\ математическая\ статистика'}],}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'ИВБО-\/04-\/22'}:\ [}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{'Понедельник:Анализ\ и\ концептуальное\ моделирование\ систем,\ Теория\ вероятностей\ и\ математическая\ статистика,\ Схемотехника\ устройств\ компьютерных\ систем,\ Схемотехника\ устройств\ компьютерных\ систем,\ Физическая\ культура\ и\ спорт\ (элективная\ дисциплина),\ Физическая\ культура\ и\ спорт\ (элективная\ дисциплина),Проектирование\ баз\ данных,\ Проектирование\ баз\ данных,\(\backslash\)nВторник:\ Схемотехника\ устройств\ компьютерных\ систем,\ Схемотехника\ устройств\ компьютерных\ систем,\ Разработка\ предметно-\/ориентированных\ языков\ программирования,Программирование\ на\ языке\ Питон,Программирование\ на\ языке\ Питон,\ Программирование\ на\ языке\ Питон,\ Программирование\ на\ языке\ Питон,\ Программирование\ на\ языке\ Питон,\(\backslash\)nСреда:Анализ\ и\ концептуальное\ моделирование\ систем,\ Анализ\ и\ концептуальное\ моделирование\ систем,Разработка\ предметно-\/ориентированных\ языков\ программирования,Разработка\ предметно-\/ориентированных\ языков\ программирования,\ Анализ\ и\ концептуальное\ моделирование\ систем,\ Анализ\ и\ концептуальное\ моделирование\ систем,Системное\ программное\ обеспечение,Проектирование\ баз\ данных,\ Иностранный\ язык,\ Иностранный\ язык,\(\backslash\)nЧетверг:\(\backslash\)nПятница:Системное\ программное\ обеспечение,Системное\ программное\ обеспечение,Схемотехника\ устройств\ компьютерных\ систем,Схемотехника\ устройств\ компьютерных\ систем,Системное\ программное\ обеспечение,Проектирование\ баз\ данных,\(\backslash\)nСуббота:Проектирование\ баз\ данных,\ Проектирование\ баз\ данных,\ Физическая\ культура\ и\ спорт\ (элективная\ дисциплина),\ Физическая\ культура\ и\ спорт\ (элективная\ дисциплина),Теория\ вероятностей\ и\ математическая\ статистика,Теория\ вероятностей\ и\ математическая\ статистика'}]\}}
+
+\end{DoxyCode}
